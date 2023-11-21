@@ -21,14 +21,14 @@ $searchBtn.addEventListener('click', async function() {
 })
 
 async function getMovieList(name) {    
-    const response = await fetch(`http://www.omdbapi.com/?apikey=b6d4b842&s=${name}`)
+    const response = await fetch(`https://www.omdbapi.com/?apikey=b6d4b842&s=${name}`)
     return await response.json()    
 }
 
 function renderSearch(arr) {
     let html = ``
     arr.forEach(movie => {
-        fetch(`http://www.omdbapi.com/?apikey=b6d4b842&i=${movie.imdbID}&type=movie`)
+        fetch(`https://www.omdbapi.com/?apikey=b6d4b842&i=${movie.imdbID}&type=movie`)
             .then(response => response.json())
             .then(dataMovie => {                
                 html += `
@@ -81,7 +81,7 @@ document.body.addEventListener('click', event => {
 
 function addMovieToLocalstorage(event) {  // ADDING MOVIE TO LOCALSTORAGE    
     if (!event.target.matches('.add-movie-btn')) return
-    fetch(`http://www.omdbapi.com/?apikey=b6d4b842&i=${event.target.id}&type=movie`)
+    fetch(`https://www.omdbapi.com/?apikey=b6d4b842&i=${event.target.id}&type=movie`)
         .then(response => response.json())
         .then(movie => {            
             let count = 0
