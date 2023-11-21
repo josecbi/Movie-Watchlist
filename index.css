@@ -9,15 +9,17 @@ html, body {
     color: #FFFFFF;  
     background-color: #0E0E0E;    
     user-select: none;
+    letter-spacing: 1px;
+    font-size: 0.9rem;
 }
 
 main {
-    width: 550px;    
+    width: 360px;    
     margin: 0 auto;
 }
 
 section {
-    max-width: 550px;
+    min-width: 360px;
 }
 
 .search-section {    
@@ -29,14 +31,14 @@ header {
     display: flex;    
     justify-content: space-between;
     align-items: center;    
-    height: 208px;
+    height: 160px;
     background: #121212 url('images/image\ 36.png');
     background-size: cover;
-    padding: 0 2.9em;
+    padding: 0 2em;
 }
 
 h1 {
-    font-size: 2.68rem;
+    font-size: 1.1rem;
     font-weight: 800;
     margin: 0;
     padding: 0;
@@ -86,7 +88,7 @@ h1 {
     font-family: inherit;
     color: inherit;
     border-radius: 0 0.4em 0.4em 0;
-    padding: 0.5em 2em;
+    padding: 0.5em 1em;
     cursor: pointer;
 }
 
@@ -97,14 +99,14 @@ h1 {
     flex-direction: column;
     justify-content: center;        
     margin-top: 50vh;    
-    font-size: 0.85rem;
+    font-size: 0.6rem;
     line-height: 1.5;
     padding: 0 2em;
     align-items: center;      
 }
 
 .no-film-list{    
-    font-size: 1.125rem;
+    font-size: 1rem;
     text-align: center;
     color: #2E2E2F;
 }
