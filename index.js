@@ -9,7 +9,8 @@ $searchBtn.addEventListener('click', async function() {
     if(!$movieName.value) return
     const movieList = await getMovieList($movieName.value)   
     const hasMovieList = movieList.Response === 'False' ? false : true
-    if(hasMovieList) {                        
+    if(hasMovieList) {    
+        $movieWrapper.innerHTML = '<div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>'                    
         renderSearch(movieList.Search)        
     }else {
         $movieWrapper.innerHTML = `
