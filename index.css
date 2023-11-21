@@ -14,12 +14,12 @@ html, body {
 }
 
 main {
-    width: 360px;    
+    width: 380px;    
     margin: 0 auto;
 }
 
 section {
-    min-width: 360px;
+    min-width: 380px;
 }
 
 .search-section {    
