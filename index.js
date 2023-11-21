@@ -22,6 +22,7 @@ $searchBtn.addEventListener('click', async function() {
 })
 
 async function getMovieList(name) { 
+    $movieWrapper.style.marginTop = '50vh'
     $movieWrapper.innerHTML = '<div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>'                       
     const response = await fetch(`https://www.omdbapi.com/?apikey=b6d4b842&s=${name}`)
     return await response.json()    
